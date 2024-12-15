@@ -27,7 +27,7 @@ group by user_id having high_value > 10000 order by session_count desc) temp lim
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 /* Problem statement
 Using the users data table, determine which country_destination appears most frequently.*/
-select country_destination, count(*) as country_count from users where country_destination <> 'NDF' group by 1 order by 2 desc limit 1;
+select country_destination, count(*) as country_count from users where country_destination <> 'NDF' group by 1 order by 2 desc limit 3;
 
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 /* Problem statement
